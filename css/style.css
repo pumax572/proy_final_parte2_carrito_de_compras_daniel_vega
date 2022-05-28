@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --colorLetra: black;
+  --colorFondo: green;
+  --familiaLetra: Verdana;
+}
+
+body {
+  background-color: #b0e6b0;
+  color: white;
+  font-family: var(--familiaLetra);
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.4em;
+  max-height: 100vh;
+}
+
+body {
+  background-image: url("../images/fondo.jpg");
+  background-position: top center;
+  Background-repeat: repeat;
+}
+
+.header {
+  background-color: var(--colorFondo);
+  color: white;
+  padding: 2rem 0;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-decoration: none;
+}
+
+.headerIndex {
+  background-color: var(--colorFondo);
+  color: white;
+  padding: 2rem 0;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-decoration: none;
+}
+
+.logo-nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logoBior {
+  margin-left: 70px;
+  max-width: 20%;
+  max-height: 20%;
+}
+
+.tituloBior {
+  letter-spacing: 15px;
+  font-size: 1.4em;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 992px;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.navigation ul ul {
+  display: none;
+}
+
+.navigation a {
+  padding: 15px 20px;
+  text-decoration: none;
+  line-height: 32px;
+  font-family: var(--familiaLetra);
+  font-weight: 700;
+}
+
+.navigation a hover {
+  background-color: grey;
+}
+
+.navigation a i {
+  margin-left: 10px;
+}
+
+.navigation ul li:hover > ul {
+  opacity: 0.9;
+  -webkit-transition: all 0.3 sec ease;
+  transition: all 0.3 sec ease;
+  display: inline-block;
+  position: absolute;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--colorLetra);
+  text-decoration: none;
+}
+
+.navigation ul li a:hover {
+  background: rgba(255, 255, 255, 0.973);
+  opacity: 0.9;
+}
+
+h3 {
+  margin-top: 10%;
+  margin-bottom: 2%;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  text-decoration: underline;
+  background-color: #4e80ac;
+  padding-top: 40px;
+  line-height: 80%;
+}
+
+form {
+  background-color: #dbe9e2;
+  padding: 20px;
+  margin-bottom: 15%;
+  margin-top: 15%;
+  margin-left: 38%;
+  width: 300px;
+  border-radius: 3px;
+  font-size: 90%;
+}
+
+.field:focus {
+  border-color: var(--colorFondo);
+}
+
+input, textarea {
+  width: 280px;
+  outline: var(--colorLetra);
+}
+
+.footerFrase {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 0rem;
+  text-align: center;
+  border: 5px solid;
+  font-size: 80%;
+  font-family: var(--familiaLetra);
+  color: #dbe9e2;
+}
+
+.footerImagen {
+  bottom: 0;
+  margin-bottom: 5%;
+  margin-top: 35%;
+  max-width: 30%;
+  max-height: 30%;
+  margin-left: 35%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.barritasId {
+  padding-left: 35%;
+}
+
+.barritasId:hover {
+  -webkit-filter: opacity(0.7);
+          filter: opacity(0.7);
+}
+
+.footerImagen:hover {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0px 0px 15px 15px #4b664b;
+  -webkit-box-shadow: 0px 0px 15px 15px #51c251;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+.nuestrosProductos1 {
+  color: var(--colorLetra);
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--colorFondo);
+}
+
+.nuestrosProductos2 {
+  color: var(--colorLetra);
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--colorFondo);
+}
+
+h2 {
+  text-align: center;
+  color: var(--colorLetra);
+  background-color: #4e80ac;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  font-size: 50px;
+  text-decoration: underline;
+  font-family: var(--familiaLetra);
+}
+
+.formularioProveedores {
+  margin-left: 200px;
+  margin-right: 170px;
+  padding: 20px;
+}
+
+.field {
+  border: black solid 1px;
+  padding: 10px;
+}
+
+input, textarea {
+  width: 280px;
+  outline: black;
+}
+
+h4 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  line-height: -2em;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline;
+  color: #f7f2f2;
+  background-color: #4e80ac;
+  font-family: var(--familiaLetra);
+}
+
+table {
+  width: 100%;
+  height: auto;
+  background-color: #bba2a2;
+  text-align: center;
+  border: black 1px;
+  border-collapse: collapse;
+  margin-bottom: 20%;
+  color: var(--colorLetra);
+  font-family: var(--familiaLetra);
+}
+
+
+td {
+  border: solid 1px black;
+  padding: 30px;
+}
+
+th {
+  border: solid 1px black;
+  padding: 30px;
+  background-color: lavender;
+}
+
+.barra {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.tituloBarra {
+  color: #302e2e;
+}
+
+h1 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  line-height: -2em;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline;
+  background-color: #4e80ac;
+}
+
+.barraHome {
+  margin-left: 200px;
+  margin-right: 50px;
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.estiloParrafo {
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-size: 40px;
+  text-align: center;
+  font-family: var(--familiaLetra);
+}
+
+.biorCandies {
+  color: var(--colorLetra);
+  font-size: 30px;
+  margin-bottom: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: aliceblue;
+}
+
+#hijoUno {
+  -webkit-transform: skew(5deg, 5deg);
+          transform: skew(5deg, 5deg);
+}
+
+.tituloPrincipal {
+  color: whitesmoke;
+  font-family: var(--familiaLetra);
+  text-align: center;
+  text-decoration: underline;
+  font-size: 40px;
+  line-height: 1.5em; 
+}
+
+main div .barraHome {
+  margin-left: 40px;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Aplicando el extend SASS2*/
+.button-basic, .button-report, .button-submit {
+  border: none;
+  margin-top: 100px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-report {
+  background-color: #dda305;
+}
+
+.button-submit {
+  background-color: #6eb61c;
+  color: white;
+}
+
+.etiquetaBarra, .tablaBarra, .tipoBarra {
+  border: 1px solid black;
+}
+
+.etiquetaBarra {
+  width: 100%;
+  background-color: #e7e98d;
+}
+
+.tipoBarra, .tablaBarra {
+  padding: 10px;
+}
+
+.tipoBarra {
+  text-align: center;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  background-color: #bb8b8b;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid-container div {
+  background-color: aquamarine;
+  text-align: center;
+  color: brown;
+  border: 1px black solid;
+}
+
+@media only screen and (max-width: 769px) and (min-width: 200px) {
+  .navigation {
+    display: block;
+    max-width: 769px;
+  }
+  .navigation {
+    position: relative;
+    background-color: #88c570;
+  }
+  .navigation ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navigation li {
+    border: 1px solid black;
+  }
+  .navigation ul li ul li {
+    background-color: white;
+  }
+  h2 {
+    font-size: x-large;
+  }
+  .etiquetaBarra {
+    background-color: #d885bf;
+  }
+  .logoBior {
+    margin-left: 10px;
+    max-width: 95px;
+    max-height: 86px;
+  }
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 769px) {
+  .etiquetaBarra {
+    background-color: #92c272;
+  }
+  .logoBior {
+    margin-left: 10px;
+    max-width: 100px;
+    max-height: 90px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

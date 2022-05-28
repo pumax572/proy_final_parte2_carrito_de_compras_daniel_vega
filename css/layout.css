@@ -1,0 +1,22 @@
+ *{margin: 0;
+   padding: 0;
+ }
+ .bodyIndex{
+     height: 100vh;
+     width: 100vw;
+     display: grid;
+     grid-area: "header header header"
+                "main main main"
+                "footer footer footer";
+ }
+
+ .headerIndex{
+     grid-area: "header";
+
+ }
+ .maindeIndex{
+     grid-area: "main";
+ }
+ .piedeIndex{
+     grid-area: "footer";
+ }

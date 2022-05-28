@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOR CANDIES</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <link rel="stylesheet"href="../css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <header class="header">
+        <p class="tituloBior"> BIOR CANDIES</p>
+        <div class="logo-nav-container">
+            <a href="../index.html">
+                <img class="logoBior"src="../images/logobior.png" alt="logo">
+            </a>
+            <nav class="navigation">
+                <ul>
+                    <li class="nav-link"><a href="../index.html">INICIO</a></li>
+                    <li class="nav-link"><a href="sobrenosotros.html">NOSOTROS</a></li>
+                    <li class="nav-link"><a href="nuestros_productos.html">PRODUCTOS</a>
+                        <ul>
+                        <li><a href="#">COCO</a></li>
+                        <li><a href="#">ARANDANOS</a></li>
+                        <li><a href="#">MARACUYA</a></li>
+                         </ul>
+                    </li>
+                    <li class="nav-link"><a href="contacto.html">CONTACTO</a></li>
+                    <li class="nav-link"><a href="ingresoproveedores.html">PROVEEDORES</a></li>
+                
+            </nav>
+        </div>
+    </header>
+  
+    <main>
+
+        <h4 class="mt-5 mb-5">NUESTROS PRODUCTOS</h4>
+
+        <div style="overflow: auto">
+            <table>
+                <tr>
+                    <th class="tituloBarra">ARANDANOS</th>
+                    <th class="tituloBarra">MARACUYA</th>
+                    <th class="tituloBarra">COCO</th>
+
+                </tr>
+                <tr>
+                  
+                    <td>BARRA DE CEREAL CON SEMILLAS DE CHIA Y AMAPOLAS. ENERGY BAR</td>
+                    <td>BARRA DE CEREAL CON SEMILLAS DE AMARANTO. ENERGY BAR</td>
+                    <td>BARRA DE CEREAL CON GERMEN DE TRIGO. ENERGY BAR</td>
+                    
+                </tr>
+                <tr>
+                  
+                    <td><img class="barra" src="../images/arandanos.jpg"></td>
+                    <td><img class="barra" src="../images/maracuya.jpg"></td>
+                    <td><img class="barra" src="../images/coco.jpg"></td>
+                    
+                </tr>
+
+
+            </table>
+
+
+
+        </div>
+        <table class="etiquetaBarra">
+            <tr>
+                <th class="tipoBarra">ARANDANOS</th>
+                <th class="tipoBarra">MARACUYA</th>
+                <th class="tipoBarra">COCO</th>
+            </tr>
+            <tr>
+                <td class="tablaBarra"><img src="../images/etiqA.JPG" alt=""></td>
+                <td class="tablaBarra"><img src="../images/etiqM.JPG" alt=""></td>
+                <td class="tablaBarra"><img src="../images/etiqC.JPG" alt=""></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="COMPRAR"</td>
+                <td><input type="submit" value="COMPRAR"</td>
+                <td><input type="submit" value="COMPRAR"</td>
+            </tr>
+            </table>
+
+            <p class="nuestrosProductos1">
+                NUESTROS PRODUCTOS SON 100% ORGANICOS
+    
+            </p>
+            <p class="nuestrosProductos2">
+                NUESTROS PRODUCTOS SON HECHOS A BASE DE HIERBAS SERRANAS
+    
+            </p>
+            <div class="barritasId"> <img src="../images/barritas.jpg" alt=""></div>
+            <table class="table-primary mt-5 mb-4">
+                <thead>
+                  <tr>
+                    <th scope="col">Precios</th>
+                    <th scope="col">COCO</th>
+                    <th scope="col">MARACUYA</th>
+                    <th scope="col">ARANDANOS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1 CAJA</th>
+                    <td> 150</td>
+                    <td>250</td>
+                    <td>350</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2 CAJAS</th>
+                    <td>130</td>
+                    <td>230</td>
+                    <td>340</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3 CAJAS</th>
+                    <td>100</td>
+                    <td>220</td>
+                    <td>330</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <br>
+              
+
+            <p class="fw-bolder mt-5 text-center bg-primary text-wrap">
+                Aqui usted podra calcular los precios de sus compras
+              </p>
+            
+                <form id="miFormulario" name="" method="post">
+                     <label>Precio 1: </label>
+                    <input type="number" name="" id="valor1" autofocus placeholder="Escribe un numero">
+                    <button onclick="limpiar();"> <a href="#">Limpiar campos</a></button>
+                    <br>
+                    <br>
+                    <label>Precio 2: </label>
+        
+                    <input type="number" name="" id="valor2" placeholder="Escribe otro numero">
+                    <br>
+                    <br>
+                    
+                    <button type="button" onclick="sumar();">Sumar</button>
+                    <button type="button" onclick="restar();">Restar</button>
+                    <button type="button" onclick="multiplicar();">Multiplicar</button>
+                    <button type="button" onclick="dividir();">Dividir</button>
+                    <p>El resultado es: <span id="el-resultado"></span></p>
+                </form>
+        
+
+                <h2>¿Quiere saber cuanto le saldra el producto si paga con dolares?</h2>
+                <p class="fw-bolder mt-5 text-center bg-primary ">
+                <label>Dolares</label>
+                <input id="inputDolares" type="number" placeholder="Dolares" oninput="dolaresPesos(this.value)" onchange="dolaresPesos(this.value)">
+              </p>
+              <p class="fw-bolder mt-5 text-center bg-primary ">
+                <label>Pesos</label>
+                <input id="inputPesos" type="number" placeholder="Pesos" oninput="pesosDolares(this.value)" onchange="pesosDolares(this.value)">
+              </p>
+            
+            </div>
+          
+                
+            
+    </main>
+   
+    <footer>
+        <img class="footerImagen" src="../images/footer.png" alt="logo">
+        <div class="footerFrase">
+            BE ENERGY BE MOTION BE NATURAL
+        </div>
+    </footer>
+    <script type="text/javascript" src="./variables.js"></script>
+
+</body>
+</html>

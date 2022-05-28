@@ -1,0 +1,455 @@
+*{
+    margin:0;
+    padding:0;
+}
+:root{
+    --colorLetra: black;
+    --colorFondo: green;
+    --familiaLetra: Verdana;
+    
+}
+body{
+    background-color: rgb(176, 230, 176);
+    color: white;
+    font-family: var(--familiaLetra);
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.4em;
+    max-height: 100vh;
+}
+body {
+    background-image: url("../images/fondo.jpg");
+    background-position: top center;
+    Background-repeat: repeat;
+    
+  }
+
+.header{
+    background-color: var(--colorFondo);
+    color: white;
+    padding: 2rem 0;
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-decoration: none;
+}
+.headerIndex{
+    background-color: var(--colorFondo);
+    color: white;
+    padding: 2rem 0;
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-decoration: none;
+}
+.logo-nav-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logoBior{
+    margin-left: 70px;
+    max-width:20%;
+    max-height:20%;    
+}
+
+.tituloBior{
+    letter-spacing: 15px;
+    font-size: 1.4em;
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+}
+.navigation ul{
+    margin:0;
+    padding:0;
+    list-style: none; 
+}
+
+
+.navigation ul {
+     display: flex;
+    list-style: none;
+    
+}
+.navigation ul ul{
+    display: none;
+}
+.navigation a {
+    
+    padding: 15px 20px;
+    text-decoration: none;
+    line-height: 32px;
+    font-family: var(--familiaLetra);
+    font-weight: 700;
+}
+.navigation a hover{
+    background-color: grey;
+    
+}
+.navigation a i{
+    margin-left: 10px;
+}
+.navigation ul li:hover> ul {
+ opacity: 0.9;
+ transition: all 0.3 sec ease;
+ display: inline-block;
+ position: absolute;
+}
+
+    
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--colorLetra);
+    text-decoration: none;
+}
+
+.navigation ul li a:hover {
+    background:rgba(255, 255, 255, 0.973);
+    opacity: 0.9;
+
+}
+
+
+
+h3{
+    margin-top: 10%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;  
+    background-color: rgb(78, 128, 172);  
+    padding-top: 40px;
+}   
+form{
+    background-color: rgb(219, 233, 226);
+    padding: 20px;
+    margin-bottom: 15%;
+    margin-top: 15%;
+    margin-left: 38%;
+    width: 300px;
+    border-radius: 3px;
+    font-size: 90%;
+}
+
+.field:focus{
+    border-color: var(--colorFondo);
+}   
+
+input, textarea{
+    width: 280px;
+    outline: var(--colorLetra);
+}
+
+.footerFrase{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 0rem;
+    text-align: center;
+    border: 5px solid;
+    font-size: 80%;
+    font-family: var(--familiaLetra);
+}
+
+.footerImagen{
+    bottom: 0;
+    margin-bottom: 5%;
+    margin-top: 35%;
+    max-width: 30%;
+    max-height: 30%;
+    margin-left: 35%;
+    align-items: center;
+}
+.barritasId{
+    padding-left: 35%;
+    
+}
+.barritasId:hover {filter: opacity(.7);}
+
+.footerImagen:hover {
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px rgb(75, 102, 75);
+    -webkit-box-shadow: 0px 0px 15px 15px rgb(81, 194, 81);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    }
+    @mixin fontStyle {
+        color: var(--colorLetra);
+        text-transform: uppercase;
+        text-align: center;
+        background-color: var(--colorFondo)
+        
+        
+    }
+    .nuestrosProductos1{
+        @include fontStyle();
+    }
+    .nuestrosProductos2{
+        @include fontStyle();
+    }
+h2{
+    text-align: center;
+    color: var(--colorLetra);
+    background-color: rgb(78, 128, 172);
+    margin-top: 15%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    font-size: 50px;
+    text-decoration: underline;
+    font-family: var(--familiaLetra);
+}
+
+.formularioProveedores{
+    margin-left: 200px;
+    margin-right: 170px;
+    padding: 20px;
+}
+
+.field{
+    border:black solid 1px;
+    padding: 10px; 
+}
+
+input, textarea{
+    width: 280px;
+    outline: black; 
+}
+
+h4{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    line-height: 1-3em;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(247, 242, 242);
+    background-color: rgb(78, 128, 172);
+    font-family: var(--familiaLetra);
+}
+
+table{
+    width:90%;
+    height: auto;
+    background-color: rgb(187, 162, 162);
+    text-align: center;
+    border: black 1px;
+    border-collapse: collapse;
+    margin-bottom: 20%;
+    color: var(--colorLetra);
+    font-family: var(--familiaLetra);   
+}
+
+td{
+    border: solid 1px black;
+    padding: 30px;
+}
+
+th{
+    border: solid 1px black;
+    padding: 30px;
+    background-color: lavender;
+}
+
+
+.barra{
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.tituloBarra{
+    color:rgb(48, 46, 46);
+}
+
+h1{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    line-height: 1-3em;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+    background-color: rgb(78, 128, 172);
+}
+
+.barraHome{
+    margin-left: 200px;
+    margin-right: 50px;
+    max-width: 70%;
+    max-height: 70%;
+   
+}
+
+
+
+.estiloParrafo{
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 40px;
+    text-align: center;
+    font-family: var(--familiaLetra);   
+}
+
+.biorCandies{
+    color:var(--colorLetra);
+    font-size: 30px;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: aliceblue;
+    
+}
+
+#hijoUno{
+    transform:skew(5deg, 5deg)
+}
+
+.tituloPrincipal{
+    color: whitesmoke;
+    font-family: var(--familiaLetra);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+main div .barraHome{
+    margin-left: 40px;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Aplicando el extend SASS2*/
+
+.button-basic {
+    border: none;
+    margin-top: 100px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-report {
+    @extend .button-basic;
+    background-color:rgb(221, 163, 5);
+}
+
+.button-submit {
+    @extend .button-basic;
+    background-color:rgb(110, 182, 28);
+    color:white;
+}
+
+
+.etiquetaBarra, .tablaBarra, .tipoBarra{
+    border: 1px solid black;
+    
+
+
+}
+.etiquetaBarra{
+    width: 100%;
+    background-color: rgb(231, 233, 141);
+}
+.tipoBarra, .tablaBarra {
+    padding: 10px;
+}
+.tipoBarra{
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    background-color: rgb(187, 139, 139);
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+.grid-container div{
+    background-color: aquamarine;
+    text-align: center;
+    color: brown;
+    border: 1px black solid;
+}
+@media only screen and (max-width:769px) and (min-width:200px)
+
+{
+    .navigation{
+        display: block;
+        
+        max-width: 769px;
+    }
+    .navigation{
+        position:relative;
+        background-color: rgb(136, 197, 112);
+    }
+    .navigation ul{
+        flex-direction: column;
+       
+    }
+    .navigation li{
+        border: 1px solid black;
+       
+    }
+    .navigation ul li ul li{
+        background-color: white
+        
+    }
+
+   h2{
+       font-size:x-large;
+   }
+    .etiquetaBarra{
+   
+        background-color: rgb(216, 133, 191);
+    }
+    
+    .logoBior{
+        margin-left: 10px;
+        max-width:95px;
+        max-height:86px; 
+          
+    }
+    table{
+        width:90%;
+        overflow-x: auto;
+        height: auto;
+        background-color: rgb(187, 162, 162);
+        text-align: center;
+        border: black 1px;
+        border-collapse: collapse;
+        margin-bottom: 20%;
+        color: var(--colorLetra);
+        font-family: var(--familiaLetra);
+
+    }
+   
+}
+@media only screen and (max-width:1920px) and (min-width:769px)
+{
+    .etiquetaBarra{
+   
+        background-color: rgb(146, 194, 114);
+    }
+    .logoBior{
+        margin-left: 10px;
+        max-width:100px;
+        max-height:90px; 
+           
+    }
+ 
+  
+  
+}
